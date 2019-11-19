@@ -27,7 +27,6 @@ public class LotteryGame
 		int[] arr = getLotteryNumbers();
 		
 		
-		
 
 	}
 
@@ -65,6 +64,14 @@ public class LotteryGame
 				
 	}
 	
+	/*
+	 * The following method obtains the user's number picks and validates the numbers to ensure
+	 * they're between 0-9
+	 * 
+	 * @return numberPicks
+	 * 
+	 */
+	
 	public static int[] getUserPicks()
 	{
 	
@@ -72,7 +79,31 @@ public class LotteryGame
 		
 		int[] numberPicks = new int[NUM_DIGITS];
 		
+		for (int i = 0; i < NUM_DIGITS; i++)
+		{
+			System.out.print("");
+		}
+		
+		Arrays.sort(numberPicks);
+		
+		return numberPicks;
+		
 	}
 	
+	/*
+	 * The following method finds matches in the Lottery Numbers and in the User's chosen numbers. 
+	 * 
+	 * 
+	 */
+	public static int[] findMatches(int[] lotteryNums, int[] userPicks)
+	{
+		
+		int count = 0;
+		
+		
+		
+		return count;
+		
+	}
 	
 }
