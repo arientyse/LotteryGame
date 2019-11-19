@@ -24,11 +24,9 @@ public class LotteryGame
 		
 		greetUser(); //Displays the welcome message for the user
 		
-		//Input
+		int[] arr = getLotteryNumbers();
 		
-		//Computation
 		
-		//Output
 		
 
 	}
@@ -43,7 +41,12 @@ public class LotteryGame
 		
 	}
 	
-	//The following method sorts a random set of 5 numbers, whose values are between 0-9 to find the set of lottery numbers.
+	/*The following method sorts a random set of 5 numbers, whose values are between 0-9 to find '
+	 * the set of lottery numbers.
+	 * 
+	 * @return lotteryWinners
+	 * 
+	 */
 	public static int[] getLotteryNumbers()
 	{
 		
