@@ -43,4 +43,33 @@ public class LotteryGame
 		
 	}
 	
+	//The following method sorts a random set of 5 numbers, whose values are between 0-9 to find the set of lottery numbers.
+	public static int[] getLotteryNumbers()
+	{
+		
+		Scanner in = new Scanner(System.in);
+		
+		int[] lotteryNumbers = new int[NUM_DIGITS];
+		
+		for (int i = 0; i < NUM_DIGITS; i++)
+		{
+			lotteryNumbers[i] = (int) (Math.random() * (0 - 9));
+		}
+		
+		Arrays.sort(lotteryNumbers);
+		
+		return lotteryNumbers;
+				
+	}
+	
+	public static int[] getUserPicks()
+	{
+	
+		Scanner in = new Scanner(System.in);
+		
+		int[] numberPicks = new int[NUM_DIGITS];
+		
+	}
+	
+	
 }
