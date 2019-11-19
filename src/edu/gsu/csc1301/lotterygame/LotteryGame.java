@@ -22,6 +22,8 @@ public class LotteryGame
 		
 		Scanner in = new Scanner(System.in);
 		
+		greetUser(); //Displays the welcome message for the user
+		
 		//Input
 		
 		//Computation
@@ -31,4 +33,14 @@ public class LotteryGame
 
 	}
 
+	//The following method prints the welcome message for the user
+	public static void greetUser()
+	{
+		
+		System.out.println("Welcome to the Lottery Game!\n");
+		
+		System.out.println("You will pick 5 numbers (0-9) and we will see if you are the Grand Prize Winner!");
+		
+	}
+	
 }
